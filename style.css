@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.container{
+    width: 50vh;
+    /* height: 10vw; */
+    max-height: 20vw;;
+    background-color: aqua;
+text-align: center;
+padding: 10px;
+display: flex;
+flex-direction: column;
+}
+
+.container p{
+   font-size: 30px;
+}
+
+
+
+.container input{
+    text-align: center;
+    height: 50px;
+    display: flex;
+   border-radius: 20px;
+}
+
+.container button{
+    height: 20px;
+    width: 200px;
+   margin: 10px;
+}
+
+.error{
+    animation:  shake 0.3s linear 2;
+}
+
+
+@keyframes shake{
+
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-5px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+    75%{
+        transform: translate(5px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+
+
+
+}
